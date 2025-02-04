@@ -1,0 +1,149 @@
+.address-link {
+    color: var(--color-primary-light);
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+        @media screen and (min-width: $bp-tablet) {
+        font-size: 16px;
+      }
+}
+
+.address-link-map {
+    color: var(--color-primary-light);
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    /* width: 100%;
+    max-width: 603px;
+    height: 100%;
+    max-height: 595px; */
+    @media screen and (min-width: $bp-tablet) {
+    font-size: 16px;
+            }
+}
+
+.address-link:hover {
+    color: var(--color-brand);
+}
+
+.address-copy {
+    font-size: 12px;
+    color: rgba(161, 130, 104, 1);
+    margin-top: 8px;
+    z-index: 2;
+
+    @media screen and (min-width: $bp-tablet) {
+    font-size: 14px;
+    margin-top: 16px;
+        }
+}
+
+.footer {
+    background-image: url('../img/footer-bg.png');
+    background-color: var(--color-primary-dark);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    overflow: hidden;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 0 0;
+    }
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+        max-width: 72px;
+        max-height: 38px;
+        margin: auto 0 32px auto ;
+       
+
+    @media screen and (min-width: $bp-tablet) {
+    margin: 0 0 130px 0;
+    max-width: 108px;
+    max-height: 57px
+   
+    }
+}
+}
+
+.address-icon {
+    fill: var(--color-primary-light);
+    /* stroke: ; */
+}
+
+.address-icon:hover {
+    fill: var(--color-brand);
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    gap: 20px;
+    padding: 32px 0;
+}
+}
+
+.footer-item {
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+    flex-basis: calc((100% - 20px) / 4);
+    text-align: left;
+}
+}
+
+.footer::after,
+.footer::before {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $bp-tablet) {
+     
+        }
+}
+
+.footer::before {
+    width: 92px;
+    height: 196px;
+    background-image: url(../img/DecorSmallBreadPhone.png);
+    content: '';
+    top: 48px;
+    @media screen and (min-width: $bp-tablet) {
+    background-image: url(../img/DecorSmallBread.png);
+    width: 180px;
+    height: 120px;
+    top: revert;
+           }
+}
+
+.footer::after {
+    right: -70px;
+    bottom: -6px;
+    background-image: url(../img/DecorBigBread.png);
+    content: '';
+    width: 380px;
+    height: 190px;
+    @media screen and (min-width: $bp-tablet) {
+    right: 0px;
+        
+    }
+}
+
+.footer-link {
+    margin-bottom: 16px;
+}
+
+.footer-icon {
+    display: inline-block;
+}
+
+.footer-icon.fb {
+    margin-right: 22px;
+}
